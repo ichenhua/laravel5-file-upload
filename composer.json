@@ -1,0 +1,30 @@
+{
+    "name": "chenhua/laravel5-file-upload",
+    "description": "The best file upload tool of Laravel 5 KindEditor",
+    "keywords": ["laravel", "upload", "file"],
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "homepage": "http://www.ichenhua.cn",
+    "authors": [
+        {
+            "name": "chenhua",
+            "email": "276004561@qq.com"
+        }
+    ],
+    "require": {
+        "qiniu/php-sdk": "^7.2",
+        "aliyuncs/oss-sdk-php": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chenhua\\FileUpload\\" : "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chenhua\\FileUpload\\FileUploadServiceProvider"
+            ],
+        }
+    }
+}
