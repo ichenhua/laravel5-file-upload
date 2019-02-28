@@ -1,6 +1,6 @@
 {
     "name": "chenhua/laravel5-file-upload",
-    "description": "The best file upload tool of Laravel 5 KindEditor",
+    "description": "The best file upload tool of Laravel 5 Editor.",
     "keywords": ["laravel", "upload", "file"],
     "license": "MIT",
     "minimum-stability": "stable",
@@ -24,7 +24,7 @@
         "laravel": {
             "providers": [
                 "Chenhua\\FileUpload\\FileUploadServiceProvider"
-            ],
+            ]
         }
     }
 }
