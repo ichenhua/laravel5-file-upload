@@ -3,6 +3,7 @@ return [
     "default" => [
         "file_id" => "file",
         "url_format" => 'local', //返回存储位置url
+        "ret_format" => 'default', //上传返回格式
         "dirver"  => ['local'], //存储平台
         "disks"   => [
             "local"  => [
@@ -27,6 +28,7 @@ return [
     "kindeditor" => [
         "file_id" => "imgFile",
         "url_format" => 'local', //返回存储位置url
+        "ret_format" => 'kindeditor', //上传返回格式
         "dirver"  => ['local'], //存储平台
         "disks"   => [
             "local"  => [

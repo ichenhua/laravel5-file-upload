@@ -29,8 +29,9 @@ class FileHandleController extends BaseController
     public function formatRes($option, $section, $urlArr = [], $message = '')
     {
         $url_key   = config('vendor.file_upload.' . $section . '.url_format');
+        $ret_key   = config('vendor.file_upload.' . $section . '.ret_format', 'default');
         $retStruct = [];
-        switch ($section) {
+        switch ($ret_key) {
             case 'default':
                 $retStruct = [
                     'err_code' => $option == 'SUCCESS' ? 0 : 1,

@@ -4,6 +4,7 @@ Laravel5-FileUpload 是用于 Kindeditor/Summernote 等富文本在线HTMl编辑
 
 ## 更新记录
 
+* 2019-08-31 `Release v1.1.0` 修复 KindEditor 上传漏洞，配置文件添加返回格式参数控制。
 * 2019-02-28 `Release v1.0.0` 完成 KindEditor/Summernote 在线编辑器主程序，且集成本地、七牛、阿里云oss存储。
 
 ## 安装流程
@@ -50,6 +51,7 @@ return [
     "default" => [
         "file_id" => "file",
         "url_format" => 'local', //返回存储位置url
+        "ret_format" => 'default', //上传返回格式
         "dirver"  => ['local'], //存储平台
         "disks"   => [
             "local"  => [
@@ -74,6 +76,7 @@ return [
     "kindeditor" => [
         "file_id" => "imgFile",
         "url_format" => 'local', //返回存储位置url
+        "ret_format" => 'kindeditor', //上传返回格式
         "dirver"  => ['local'], //存储平台
         "disks"   => [
             "local"  => [
